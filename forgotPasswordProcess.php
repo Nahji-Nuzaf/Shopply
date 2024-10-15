@@ -16,7 +16,7 @@ if(isset($_GET["e"])){
 
     if($row_nums == 1){
 
-        $code = uniqid();
+        // $code = uniqid();
 
         Shopply::iud("UPDATE `user` SET `verification_code`='".$code."' WHERE `email`='".$email."'");
 
