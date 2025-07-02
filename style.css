@@ -1,0 +1,511 @@
+.main-body{
+    background-image: url("resources/bg-sign.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg2{
+    background-image: url("resources/huge\ \(2\).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    border-radius: 5px;
+}
+
+.bg3{
+    background-image: url("resources/white.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    border-radius: 5px;
+    
+}
+
+.logo{
+    background-image: url("resources/logo-bg.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.header1{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: aqua;
+}
+
+
+@media(max-width:999px){
+    .navs{
+        display: none;
+    }
+    .navsm{
+        display: flex;
+    }
+    .catsm{
+        display: flex;
+    }
+    .catlg{
+        display: none;
+    }
+    .carouselsm{
+        display: none;
+    }
+    .bsearch{
+        display: flex;
+        margin-top: 30px;
+    }
+    
+}
+
+@media(min-width:1000px){
+    .navs{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-top: 22px;
+    }
+    .navsm{
+        display: none;
+    }
+    .catsm{
+        display: none;
+    }
+    
+}
+
+
+.ull{
+    display: flex;
+    flex-direction: row;
+}
+
+.lii{
+    list-style-type: none;
+    margin-left: 2.5rem;
+}
+
+.options{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 1.07rem;
+}
+
+.lii ::after{
+    content: '';
+    width: 0rem;
+    height: 0.15rem;
+    background-color: blueviolet;
+    display: block;
+    border-radius: 0.2rem;
+    margin: 0.2rem auto 0 auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.lii:hover ::after{
+    width: 2.0rem;
+}
+
+.row1{
+    font-size: 15px;
+}
+
+.box1{
+    margin-top: 80px;
+}
+
+.text1{
+    margin-top: 100px;
+}
+.text2{
+    margin-top: 160px;
+}
+
+@font-face {
+    font-family: "YatraOne";
+    src: url("fonts/YatraOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Inconsolata";
+    src: url("fonts/Inconsolata.otf");
+}
+
+@font-face {
+    font-family: "Inconsolata";
+    src: url("fonts/Lato-Black.ttf");
+}
+
+@font-face {
+    font-family: "workSans";
+    src: url("fonts/WorkSans-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Gajkley";
+    src: url("fonts/Gajkley.otf");
+}
+
+@font-face {
+    font-family: "Vanilla";
+    src: url("fonts/VanillaRavioli_Demo.ttf");
+}
+
+.resetbox{
+    height: 500px;
+    width: 400px;
+}
+
+
+.poster-image-1{
+    height: 450px;
+}
+
+.poster-title{
+    font-style: "workSans";
+    color: white;
+    font-size: 50px;
+    
+}
+
+.poster-caption{
+    margin-bottom: 110px;
+    margin-right: 365px;
+}
+
+.poster-text{
+    font-size: 30px;
+    font-weight: bold
+}
+
+.poster-text-1{
+    font-size: 30px;
+    font-weight: bold
+}
+
+.rectangle{
+    color: orangered;
+    font-family: "Vanilla";
+}
+
+.set1{
+    font-size: 50px;
+    font-family: "Vanilla";
+    font-weight: 90px;
+}
+
+.product-inner-box .icons{
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    top: -3%;
+    transition: all 0.2s ease-in-out, transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    opacity: 0;
+}
+
+.product-inner-box .icons a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.product-inner-box .onsale .badge{
+    background: #000;
+    font-size: 12px;
+    padding: 5px 14px;
+    top: 0px;
+    
+}
+
+.product-inner-box img{
+    box-shadow: 0 33px 61px -29px rgb(0 0 0 / 26%);
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.product-box.is-hover .icons{
+    transform: rotateY(-3%);
+    top: 3%;
+    opacity: 1;
+}
+
+.cart-btn{
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.2s ease-in-out, transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.product-box.is-hover .cart-btn{
+    opacity: 1;
+}
+
+.product-name{
+    font-family: "Gotham ss";
+}
+
+.errors{
+    font-size: 12px;
+    color: red;
+}
+
+.mgpr{
+    font-size: 25px;
+    font-family: "Gotham ss";
+}
+
+.input{
+    display: none;
+}
+
+.label{
+    height: 100px;
+    width: 100px;
+    border-radius: 6px;
+    border: 1px dashed #999;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.label:hover{
+    border: 1px dashed #de0611;
+}
+
+.filebutton{
+    width: 100%;
+    height: 25px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.pm{
+    height: 65px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.pm1{
+    background-image: url("resources/payment_methods/american_express_img.png");
+}
+.pm2{
+    background-image: url("resources/payment_methods/mastercard_img.png");
+}
+.pm3{
+    background-image: url("resources/payment_methods/paypal_img.png");
+}
+.pm4{
+    background-image: url("resources/payment_methods/visa_img.png");
+}
+
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn2{
+    border-radius: 20px;
+    background-color: black;
+    border-color: #000;
+    white-space: nowrap;
+}
+
+.btn-primary{
+    background-color: black;
+}
+
+.wrapper{
+    height: 45px;
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper span{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.wrapper span.num{
+    font-size: 20px;
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.btn1{
+    background-color: black;
+}
+
+.boxes{
+    cursor: pointer;
+}
+
+.sbox{
+    border-radius: 18px;
+}
+
+.invoice1{
+    font-family: "Vanilla";
+    font-size: 80px;
+    color: green;
+}
+
+.tnx{
+    margin-top: -100px;
+    font-family: "Vanilla";
+}
+
+.img2{
+    margin-top: -100px;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.product-qty{
+    width: 400px;
+    height: 35px;
+    
+}
+
+
+.qty-buttons{
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 30px;
+    border: solid 1px rgb(72,71,71);
+}
+
+.qty-inc,.qty-dec{
+    width: 100%;
+    height: 50%;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.qty-inc{
+    border-top-right-radius: 5px;
+}
+
+.qty-dec{
+    border-bottom-right-radius: 5px;
+}
+
+.oldp{
+    font-style: italic;
+}
+
+.message_box,
+.chat_box{
+    height: 210px;
+}
+
+.otherimgs{
+    
+    height: 25px;
+    width: 25px;
+}
+
+.proimgss{
+    height: 20px;
+    width: 20px;
+}
+
+.adminoptionso{
+    margin-right: 30px;
+    height: 590px;
+    border-radius: 15px;
+}
+
+.adminoptions{
+    margin-right: 30px;
+    height: 590px;
+    border-radius: 15px;
+}
+
+
+.adminpbox{
+    height: 120px;
+    border-radius: 15px;
+}
+
+.adminpbox:hover{
+    background-color: aquamarine;
+}
+
+.adminpbigbox{
+    /* background-color: green; */
+    border-radius: 25px;
+    height: 300px;
+}
+
+.adminprofile{
+    list-style-type: none;
+    margin-right: 45px;
+}
+
+.chart{
+    height: 270px;
+}
+
+.chart1{
+    height: 300px;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+.soldpro{
+    /* background-color: red; */
+    border-radius: 20px;
+    height: 320px;
+}
+
+.likedpro{
+    /* background-color: red; */
+    border-radius: 20px;
+    height: 320px;
+}
+
+.userdiv{
+    border-radius: 20px;
+    margin-top: -30px;
+    
+}
+
+.userdiv2{
+    border-radius: 20px;
+    margin-top: -30px;
+    z-index: +1;
+}
